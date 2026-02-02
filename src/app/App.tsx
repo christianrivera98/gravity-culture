@@ -18,6 +18,7 @@ import imgButtonSmall from "@/assets/ed5b3d31828c41c6b40cd0ce216d9cf6052ef2d8.pn
 import imgSubscribeContainer from "@/assets/243ad2cec4bbe48d8c5bc25518aea4722ff70dd5.png";
 import ArchivePage from '@/app/components/ArchivePage.js';
 import AboutPage from '@/app/components/AboutPage.js';
+import VideoHome from '@/assets/videoHome.mp4'
 
 // Data for articles
 const articles = [
@@ -121,7 +122,7 @@ function HeroSection() {
         muted
         playsInline
       >
-        <source src="/_videos/v1/027c42043d74a9859913b7bda5625e98f4000c64" />
+        <source src={VideoHome} />
       </video>
       <div className="relative shrink-0 w-full pb-4 px-4 md:pb-5 md:px-5">
         <div className="flex flex-col items-start w-full">
