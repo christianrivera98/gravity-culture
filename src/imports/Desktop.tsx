@@ -1,19 +1,19 @@
 import svgPaths from "@/imports/svg-lf93d8sd47.js";
-import imgNavItem from "figma:asset/16ea04cf7635cf8568a15abf32c149f41ad2afcb.png";
-import imgNavItem1 from "figma:asset/61071de1ff7e1016fb34de249accc9aa62fdec08.png";
-import imgNavItem2 from "figma:asset/5442b942da457deeb180237c6c3ce2cd8c7cb76a.png";
-import imgLogo from "figma:asset/ac10c0d1bde583437f1e360fdfd8715b06bf6477.png";
-import imgArticlesItem from "figma:asset/b49e3b214fd4defc11a623af10b336ba4c5e3910.png";
-import imgArticlesItem1 from "figma:asset/508cce5b8ca923952642e9230c8a34bf056931af.png";
-import imgArticlesItem2 from "figma:asset/83bc94e7880d759cc5a44eb2aa20e410862a0583.png";
-import imgArticlesItem3 from "figma:asset/e42b0990278acbb590da999badfeefc90991ef44.png";
-import imgButtonLarge from "figma:asset/f5defbf95e8cade70cb3b5c3b8f9798395aa3548.png";
-import imgImage from "figma:asset/379cb7a36ea0a29c2f4b8af1bf39404f14c71ca3.png";
-import imgFeaturedAlbumSection from "figma:asset/84605de7d005df13f35abed23177a6a5e6466d35.png";
-import imgCinemaSelectsSection from "figma:asset/aca0cf5e16dde9722dea1a92e8c1a240b58f1e6a.png";
-import imgButtonSmall from "figma:asset/ed5b3d31828c41c6b40cd0ce216d9cf6052ef2d8.png";
-import imgSubscribeContainer from "figma:asset/243ad2cec4bbe48d8c5bc25518aea4722ff70dd5.png";
-import imgSubscribeSection from "figma:asset/d0e3c8c699748935cb2f37b831027faffffbaab2.png";
+import imgNavItem from "@/assets/16ea04cf7635cf8568a15abf32c149f41ad2afcb.png";
+import imgNavItem1 from "@/assets/61071de1ff7e1016fb34de249accc9aa62fdec08.png";
+import imgNavItem2 from "@/assets/5442b942da457deeb180237c6c3ce2cd8c7cb76a.png";
+import imgLogo from "@/assets/ac10c0d1bde583437f1e360fdfd8715b06bf6477.png";
+import imgArticlesItem from "@/assets/b49e3b214fd4defc11a623af10b336ba4c5e3910.png";
+import imgArticlesItem1 from "@/assets/508cce5b8ca923952642e9230c8a34bf056931af.png";
+import imgArticlesItem2 from "@/assets/83bc94e7880d759cc5a44eb2aa20e410862a0583.png";
+import imgArticlesItem3 from "@/assets/e42b0990278acbb590da999badfeefc90991ef44.png";
+import imgButtonLarge from "@/assets/f5defbf95e8cade70cb3b5c3b8f9798395aa3548.png";
+import imgImage from "@/assets/379cb7a36ea0a29c2f4b8af1bf39404f14c71ca3.png";
+import imgFeaturedAlbumSection from "@/assets/84605de7d005df13f35abed23177a6a5e6466d35.png";
+import imgCinemaSelectsSection from "@/assets/aca0cf5e16dde9722dea1a92e8c1a240b58f1e6a.png";
+import imgButtonSmall from "@/assets/ed5b3d31828c41c6b40cd0ce216d9cf6052ef2d8.png";
+import imgSubscribeContainer from "@/assets/243ad2cec4bbe48d8c5bc25518aea4722ff70dd5.png";
+import imgSubscribeSection from "@/assets/d0e3c8c699748935cb2f37b831027faffffbaab2.png";
 
 function NavItem() {
   return (
@@ -594,7 +594,7 @@ function CinemaSelectsSection() {
 
 function BodyContentContainer() {
   return (
-    <main className="max-w-[1800px] relative shrink-0 w-full z-[3]" data-name="Body content container" tabIndex={-1} >
+    <main className="max-w-[1800px] relative shrink-0 w-full z-[3]" data-name="Body content container" tabIndex={-1}>
       <div className="flex flex-col items-center max-w-[inherit] size-full">
         <div className="content-stretch flex flex-col gap-[10px] items-center max-w-[inherit] px-[10px] relative w-full">
           <HeroSection />

@@ -16,6 +16,8 @@ import imgFeaturedAlbumSection from "@/assets/84605de7d005df13f35abed23177a6a5e6
 import imgCinemaSelectsSection from "@/assets/aca0cf5e16dde9722dea1a92e8c1a240b58f1e6a.png";
 import imgButtonSmall from "@/assets/ed5b3d31828c41c6b40cd0ce216d9cf6052ef2d8.png";
 import imgSubscribeContainer from "@/assets/243ad2cec4bbe48d8c5bc25518aea4722ff70dd5.png";
+import ArchivePage from '@/app/components/ArchivePage.js';
+import AboutPage from '@/app/components/AboutPage.js';
 
 // Data for articles
 const articles = [
@@ -91,16 +93,16 @@ function NavButton({
   );
 }
 
-function Navigation() {
+function Navigation({ onNavigate }: { onNavigate: (page: string) => void }) {
   return (
     <nav className="flex items-center justify-between md:justify-center gap-2 md:gap-4 pointer-events-auto pt-2.5 sticky top-0 z-[5] px-4 md:px-0">
       <div className="hidden md:block relative shrink-0 size-11">
         <img alt="Cine Archive logo" className="absolute inset-0 max-w-none object-cover size-full" src={imgLogo} />
       </div>
       <div className="flex flex-wrap gap-2 items-center justify-center flex-1 md:flex-initial">
-        <NavButton bgImage={imgNavItem} bgColor="rgb(255, 87, 0)">Inicio</NavButton>
-        <NavButton bgImage={imgNavItem1} bgColor="rgb(50, 206, 87)" rounded="rounded-full">Archivo</NavButton>
-        <NavButton bgImage={imgNavItem2} bgColor="rgb(163, 202, 255)" rounded="rounded-md">Acerca</NavButton>
+        <NavButton bgImage={imgNavItem} bgColor="rgb(255, 87, 0)" onClick={() => onNavigate('home')}>Inicio</NavButton>
+        <NavButton bgImage={imgNavItem1} bgColor="rgb(50, 206, 87)" rounded="rounded-full" onClick={() => onNavigate('archive')}>Archivo</NavButton>
+        <NavButton bgImage={imgNavItem2} bgColor="rgb(163, 202, 255)" rounded="rounded-md" onClick={() => onNavigate('about')}>Acerca</NavButton>
       </div>
       <div className="hidden md:block shrink-0 size-11" />
     </nav>
@@ -441,20 +443,34 @@ function Footer() {
 }
 
 export default function App() {
+  const [currentPage, setCurrentPage] = useState('home');
+
+  const handleNavigation = (page: string) => {
+    setCurrentPage(page);
+  };
+
   return (
     <div className="min-h-screen w-full bg-[#0f0e0e] flex flex-col">
       <div className="flex-1 flex flex-col items-center w-full">
         <main className="max-w-[1800px] relative shrink-0 w-full z-[3]">
           <div className="flex flex-col items-center justify-center max-w-[inherit] size-full">
             <div className="flex flex-col gap-2.5 items-center justify-center max-w-[inherit] px-2.5 w-full">
-              <Navigation />
-              <HeroSection />
-              <ArticlesList />
-              <ViewAllButton />
-              <FeaturedAlbumSection />
-              <CinemaSelectsSection />
-              <SubscribeSection />
-              <Footer />
+              <Navigation onNavigate={handleNavigation} />
+              {currentPage === 'home' ? (
+                <>
+                  <HeroSection />
+                  <ArticlesList />
+                  <ViewAllButton />
+                  <FeaturedAlbumSection />
+                  <CinemaSelectsSection />
+                  <SubscribeSection />
+                  <Footer />
+                </>
+              ) : currentPage === 'archive' ? (
+                <ArchivePage />
+              ) : currentPage === 'about' ? (
+                <AboutPage />
+              ) : null}
             </div>
           </div>
         </main>
