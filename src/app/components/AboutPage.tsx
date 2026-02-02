@@ -15,7 +15,7 @@ function HeaderSection() {
   return (
     <header className="flex flex-col items-center py-20 sm:py-32 lg:py-44 relative rounded-lg shrink-0 w-full">
       <h1 className="block leading-[0.8] relative shrink-0 text-[#f6f8fb] text-6xl sm:text-8xl lg:text-[160px] text-center tracking-tighter w-full">
-        About
+        Nosotros
       </h1>
     </header>
   );
@@ -24,42 +24,42 @@ function HeaderSection() {
 function ObjectsMarquee() {
   return (
     <section 
-      aria-label="A scrolling row of vintage media objects" 
+      aria-label="Fila desplazable de objetos mediáticos vintage" 
       className="flex gap-6 sm:gap-9 items-center justify-center overflow-x-auto overflow-y-hidden py-5 relative shrink-0 px-4"
     >
       <div className="h-32 sm:h-52 lg:h-[270px] relative shrink-0 w-28 sm:w-44 lg:w-56">
         <div className="absolute inset-0 overflow-hidden">
-          <img alt="" className="absolute h-[112.83%] left-[-4.85%] max-w-none top-[-7.19%] w-[108.84%]" src={imgPolaroid} />
+          <img alt="Polaroid vintage" className="absolute h-[112.83%] left-[-4.85%] max-w-none top-[-7.19%] w-[108.84%]" src={imgPolaroid} />
         </div>
       </div>
       <div className="h-44 sm:h-64 lg:h-[350px] relative shrink-0 w-24 sm:w-36 lg:w-48">
-        <img alt="" className="absolute inset-0 max-w-none object-cover size-full" src={imgPaperScrap} />
+        <img alt="Recorte de papel" className="absolute inset-0 max-w-none object-cover size-full" src={imgPaperScrap} />
       </div>
       <div className="relative shrink-0 size-40 sm:size-56 lg:size-80">
         <div className="absolute inset-0 overflow-hidden">
-          <img alt="" className="absolute h-[109.93%] left-[-5.06%] max-w-none top-[-5.33%] w-[110.12%]" src={imgVinylRecord} />
+          <img alt="Disco de vinilo" className="absolute h-[109.93%] left-[-5.06%] max-w-none top-[-5.33%] w-[110.12%]" src={imgVinylRecord} />
         </div>
       </div>
       <div className="h-20 sm:h-32 lg:h-44 relative shrink-0 w-32 sm:w-52 lg:w-[313px]">
         <div className="absolute inset-0 overflow-hidden">
-          <img alt="" className="absolute h-[173.06%] left-[-22.94%] max-w-none top-[-37.55%] w-[149.65%]" src={imgVhsTape} />
+          <img alt="Cinta VHS" className="absolute h-[173.06%] left-[-22.94%] max-w-none top-[-37.55%] w-[149.65%]" src={imgVhsTape} />
         </div>
       </div>
       <div className="h-28 sm:h-44 lg:h-60 relative shrink-0 w-36 sm:w-56 lg:w-[348px]">
         <div className="absolute inset-0 overflow-hidden">
-          <img alt="" className="absolute h-[125.43%] left-[-6.85%] max-w-none top-[-12.71%] w-[113.7%]" src={imgTelegram} />
+          <img alt="Telegrama" className="absolute h-[125.43%] left-[-6.85%] max-w-none top-[-12.71%] w-[113.7%]" src={imgTelegram} />
         </div>
       </div>
       <div className="h-20 sm:h-28 lg:h-40 relative shrink-0 w-32 sm:w-48 lg:w-64">
         <div className="absolute inset-0 overflow-hidden">
-          <img alt="" className="absolute h-[192.77%] left-[-36.44%] max-w-none top-[-54.47%] w-[181.71%]" src={imgCasette} />
+          <img alt="Cassette" className="absolute h-[192.77%] left-[-36.44%] max-w-none top-[-54.47%] w-[181.71%]" src={imgCasette} />
         </div>
       </div>
       <div className="flex items-center justify-center relative shrink-0">
         <div className="-rotate-4">
           <div className="h-32 sm:h-48 lg:h-[280px] relative w-44 sm:w-64 lg:w-[425px]">
             <div className="absolute inset-0 overflow-hidden">
-              <img alt="" className="absolute h-[205.31%] left-[-40.59%] max-w-none top-[-52.5%] w-[178.5%]" src={imgPostcard} />
+              <img alt="Postal" className="absolute h-[205.31%] left-[-40.59%] max-w-none top-[-52.5%] w-[178.5%]" src={imgPostcard} />
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ function ObjectsMarquee() {
       <div className="flex items-center justify-center relative shrink-0">
         <div className="rotate-6">
           <div className="h-24 sm:h-36 lg:h-56 relative w-24 sm:w-32 lg:w-[212.896px]">
-            <img alt="" className="absolute inset-0 max-w-none object-cover size-full" src={imgFloppyDisk} />
+            <img alt="Disco flexible" className="absolute inset-0 max-w-none object-cover size-full" src={imgFloppyDisk} />
           </div>
         </div>
       </div>
@@ -81,10 +81,10 @@ function AboutSection() {
       <div className="flex flex-col lg:flex-row justify-center max-w-[inherit] size-full">
         <div className="flex flex-col lg:flex-row font-semibold gap-6 sm:gap-8 lg:gap-10 items-start justify-center leading-[1.4] px-6 sm:px-12 lg:px-[50px] py-12 sm:py-20 lg:py-[120px] relative text-[#f6f8fb] text-base sm:text-lg lg:text-xl w-full">
           <h2 className="block relative shrink-0 lg:w-[200px] w-full">
-            Why this exists
+            Por qué existe esto
           </h2>
           <p className="flex-1 relative">
-            Grain Archive is a running record of the fuzz, fragments, and found moments in music, film, and visual culture. From washed-out shoegaze to sun-faded celluloid, we document the tones that don't always get clean airtime. Not everything needs to be polished to mean something. Independently run by me, Casey Moth, and updated at the mercy of mood, memory, and whatever's looping at 3am.
+            Grain Archive es un registro continuo de interferencias, fragmentos y momentos encontrados en la música, el cine y la cultura visual. Desde el shoegaze difuso hasta el celuloide desgastado por el sol, documentamos los tonos que no siempre logran una emisión limpia. No todo necesita estar pulido para tener significado. Gestionado de forma independiente por mí, Casey Moth, y actualizado según el humor, la memoria y lo que sea que esté sonando en bucle a las 3 de la mañana.
           </p>
         </div>
       </div>
@@ -99,7 +99,7 @@ function ContactSection() {
         <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-10 items-stretch lg:items-start justify-center px-4 sm:px-6 lg:px-10 pb-12 sm:pb-20 lg:pb-[120px] relative w-full">
           <div className="flex-1 h-64 sm:h-96 lg:h-[700px] relative rounded-lg overflow-hidden">
             <img 
-              alt="Portrait of the blog owner" 
+              alt="Retrato del dueño del blog" 
               className="absolute inset-0 max-w-none object-cover size-full" 
               src={imgImage} 
             />
@@ -107,12 +107,12 @@ function ContactSection() {
           <div className="flex flex-1 flex-col items-center lg:items-start justify-center">
             <div className="flex flex-col gap-4 sm:gap-6 items-start max-w-[400px] text-[#f6f8fb] w-full">
               <h2 className="block text-2xl sm:text-3xl tracking-tight">
-                Contact
+                Contacto
               </h2>
               <div className="flex flex-col font-semibold text-base sm:text-lg lg:text-xl">
-                <p className="mb-4">Got a dusty VHS, a lost record, or a film no one talks about?</p>
+                <p className="mb-4">¿Tienes un VHS polvoriento, un disco perdido o una película de la que nadie habla?</p>
                 <p>
-                  Send recs, love letters, or questions to{' '}
+                  Envía recomendaciones, cartas de amor o preguntas a{' '}
                   <a 
                     className="cursor-pointer underline hover:text-[#a3caff] transition-colors" 
                     href="mailto:mail@grainarchive.com"
@@ -160,7 +160,7 @@ function SubscribeSection() {
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Subscription:', email);
+    console.log('Suscripción:', email);
     setEmail('');
   };
   
@@ -176,28 +176,28 @@ function SubscribeSection() {
               backgroundPosition: 'center'
             }}
           >
-            {/* Paper graphics top (mobile/tablet) */}
+            {/* Gráficos de papel arriba (móvil/tablet) */}
             <div className="lg:hidden w-full">
               <div className="relative border-b-[1.5px] border-dashed border-[#0f0e0e]">
                 <PaperHoles orientation="horizontal" />
               </div>
             </div>
             
-            {/* Paper graphics left (desktop) */}
+            {/* Gráficos de papel izquierda (escritorio) */}
             <div className="hidden lg:flex h-full">
               <div className="relative border-r-[1.5px] border-dashed border-[#0f0e0e]">
                 <PaperHoles orientation="vertical" />
               </div>
             </div>
             
-            {/* Content */}
+            {/* Contenido */}
             <div className="flex flex-1 flex-col gap-6 sm:gap-8 items-center justify-center py-8 sm:py-12 px-6 sm:px-10">
               <div className="flex flex-col gap-4 items-center text-[#0f0e0e] text-center w-full">
                 <h2 className="italic leading-[0.9] text-4xl sm:text-5xl lg:text-[80px] tracking-tight">
-                  Tune into the signal
+                  Sintoniza la señal
                 </h2>
                 <p className="font-normal leading-[1.4] text-base sm:text-lg lg:text-xl">
-                  No noise—just deep cuts on music, film, and culture
+                  Sin ruido—solo hallazgos profundos sobre música, cine y cultura
                 </p>
               </div>
               <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 w-full max-w-md">
@@ -205,7 +205,7 @@ function SubscribeSection() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="your@email.com"
+                  placeholder="tu@email.com"
                   className="flex-1 px-4 sm:px-5 py-3 sm:py-3.5 rounded-lg border-2 border-[#0f0e0e] bg-white text-[#0f0e0e] font-semibold text-sm sm:text-base lg:text-lg focus:outline-none focus:ring-2 focus:ring-[#0f0e0e] transition-all"
                   required
                 />
@@ -220,19 +220,19 @@ function SubscribeSection() {
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                 >
-                  Subscribe
+                  Suscribirse
                 </button>
               </form>
             </div>
             
-            {/* Paper graphics right (desktop) */}
+            {/* Gráficos de papel derecha (escritorio) */}
             <div className="hidden lg:flex h-full">
               <div className="relative border-l-[1.5px] border-dashed border-[#0f0e0e]">
                 <PaperHoles orientation="vertical" />
               </div>
             </div>
             
-            {/* Paper graphics bottom (mobile/tablet) */}
+            {/* Gráficos de papel abajo (móvil/tablet) */}
             <div className="lg:hidden w-full">
               <div className="relative border-t-[1.5px] border-dashed border-[#0f0e0e]">
                 <PaperHoles orientation="horizontal" />
@@ -258,19 +258,19 @@ function Footer() {
             <div className="flex flex-col gap-2">
               <div className="flex items-center justify-start px-1.5 py-0.5 rounded-full border border-[#d1d2d8]">
                 <h3 className="font-semibold leading-[1.4] text-[#d1d2d8] text-[10px] uppercase tracking-wide">
-                  Links
+                  Enlaces
                 </h3>
               </div>
               <div className="flex flex-col font-normal leading-[1.4] text-[#d1d2d8] text-lg sm:text-xl underline">
-                <p>Home</p>
-                <p>Archive</p>
-                <p>About</p>
+                <p className="cursor-pointer">Inicio</p>
+                <p className="cursor-pointer">Archivo</p>
+                <p className="cursor-pointer">Nosotros</p>
               </div>
             </div>
             <div className="flex flex-col gap-2">
               <div className="flex items-center justify-start px-1.5 py-0.5 rounded-full border border-[#d1d2d8]">
                 <h3 className="font-semibold leading-[1.4] text-[#d1d2d8] text-[10px] uppercase tracking-wide">
-                  Connect
+                  Conectar
                 </h3>
               </div>
               <div className="flex flex-col font-normal leading-[1.4] text-[#d1d2d8] text-lg sm:text-xl underline">
@@ -283,7 +283,7 @@ function Footer() {
           </div>
           <div className="flex flex-col font-normal leading-[1.4] text-[#d1d2d8] text-sm sm:text-base">
             <p>©2025 Grain Archive</p>
-            <p>Words, images, and signals from the edge</p>
+            <p>Palabras, imágenes y señales desde el límite</p>
           </div>
         </div>
       </div>
